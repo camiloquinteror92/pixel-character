@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+.map {
+    width: 800px; /* Tamaño del mapa */
+    height: 800px;
+    background-image: url('mapa.png'); /* Cambia 'mapa.png' por la ruta de tu imagen de fondo */
+    background-size: cover;
+    border: 1px solid #333; /* Borde */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    position: relative;
+    overflow: hidden;
+}
+
+
+.muneco {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+}
+
+.muneco img {
+    width: 30px; /* Tamaño del muñeco */
+    height: 30px;
+    display: none;
+}
+
+.muneco img.active {
+    display: block;
+}
